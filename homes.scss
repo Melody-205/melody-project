@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(235, 120, 139);
+    padding: 0 80px;
+    margin: 0 auto;
+    header {
+         // max-width: 1400px;
+         display: flex; 
+         // justify-content: space-evenly;
+         align-items: center;
+         padding-top: 40px;
+        nav {
+          display: flex;
+          justify-content: space-between;
+          margin-left: 400px;
+          width: 800px;
+            .nav-li {
+                text-decoration: none;
+                font-size: 20px;
+                color: white;
+                &:hover {
+                   color: pink;
+                   font-weight: 700px;
+                   border-bottom: 2px solid pink;
+                }
+            }
+        }
+    }
+    main {
+        section {
+            padding-top: 100px;
+            position: relative;
+            .left-sec-home {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-right: 120px;
+                h2 {
+                    font-size: 70px;
+                    font-weight: 700;
+                }
+                .btn-cont {
+                    display: flex;
+                    padding-top: 90px;
+                    padding-left: 120px;
+                    .btn-shop {
+                        padding: 15px;
+                        background-color: rgb(245, 115, 169); 
+                        color: black;
+                        display: inline-block;
+                        text-decoration: none;
+                        border-radius: 8px;
+                        margin-right: 24px;
+                        font-size: 30px;
+                        box-shadow: 2px 2px 2px 2px  rgb(36, 14, 25);;
+                    }
+                }
+                p {
+                    font-size: 30px;
+                    font-weight: 700px;
+                    padding-top: 50px;
+                    color: #ffffff;
+                    padding-left: 80px;
+                }
+            }
+            .right-sec-home {
+                display: flex;
+                position: absolute;
+                left: 700px;
+                top: 80px;
+            }
+        }
+    }
+}
